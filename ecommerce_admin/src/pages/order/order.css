@@ -1,0 +1,82 @@
+.order {
+    flex: 4; /* Match the flex property of the product */
+    padding: 20px; /* Padding around the order container */
+    margin: 20px; /* Margin to create space around the container */
+    background-color: #f9f9f9; /* Light background for contrast */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
+}
+
+.orderTitleContainer {
+    display: flex; /* Use flex for layout */
+    align-items: center; /* Center title vertically */
+    justify-content: space-between; /* Space title and potential buttons */
+}
+
+.orderTitle {
+    font-size: 2rem; /* Title size */
+    font-weight: bold; /* Title weight */
+    color: #333; /* Title color */
+}
+
+.orderTop {
+    display: flex; /* Use flex for top section */
+    flex-direction: column; /* Stack items vertically */
+    margin-bottom: 20px; /* Space below the top section */
+}
+
+.orderInfoItem {
+    display: flex; /* Flex layout for item */
+    justify-content: space-between; /* Space between key and value */
+    padding: 10px; /* Padding inside items */
+    border: 1px solid #ddd; /* Light border */
+    border-radius: 5px; /* Rounded corners */
+    background-color: #fff; /* White background */
+    margin-bottom: 10px; /* Space between items */
+}
+
+.orderInfoKey {
+    font-weight: bold; /* Key text weight */
+    color: #555; /* Gray color for keys */
+}
+
+.orderInfoValue {
+    color: #333; /* Dark color for values */
+}
+
+.orderBottom {
+    margin-top: 20px; /* Space above bottom section */
+}
+
+.orderProductsTitle {
+    font-size: 1.5rem; /* Title size for products */
+    margin-bottom: 10px; /* Space below title */
+}
+
+.productList {
+    list-style: none; /* Remove bullet points */
+    padding: 0; /* No padding */
+    margin: 0; /* No margin */
+}
+
+.productItem {
+    display: flex; /* Flex layout for product items */
+    align-items: center; /* Center items vertically */
+    border: 1px solid #ddd; /* Light border */
+    border-radius: 5px; /* Rounded corners */
+    padding: 15px; /* Padding inside */
+    margin-bottom: 10px; /* Space between items */
+    background-color: #fff; /* White background */
+}
+
+.productImage {
+    width: 50px; /* Fixed width */
+    height: 50px; /* Fixed height */
+    object-fit: cover; /* Maintain aspect ratio */
+    border-radius: 5px; /* Rounded corners */
+    margin-right: 15px; /* Space to right of image */
+}
+
+.productDetails {
+    flex: 1; /* Allow details to take remaining space */
+}
