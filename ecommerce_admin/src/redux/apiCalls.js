@@ -37,7 +37,7 @@ export const deleteProduct = async (dispatch, id) => {
 
     try {
         const token = JSON.parse(JSON.parse(localStorage.getItem("persist:root")).user).currentUser.accessToken;
-        const res = await userRequest(token).delete(`/products/${id}`);
+        await userRequest(token).delete(`/products/${id}`);
         dispatch(deleteProductSuccess(id));
     } catch (error) {
         dispatch(deleteProductFailue());
@@ -89,7 +89,7 @@ export const deleteUser = async (dispatch, id) => {
 
     try {
         const token = JSON.parse(JSON.parse(localStorage.getItem("persist:root")).user).currentUser.accessToken;
-        const res = await userRequest(token).delete(`/users/${id}`);
+        await userRequest(token).delete(`/users/${id}`);
         dispatch(deleteUserSuccess(id));
     } catch (error) {
         dispatch(deleteUserFailue());
@@ -139,7 +139,7 @@ export const deleteOrder = async (dispatch, id) => {
   dispatch(deleteOrderStart());
   try {
     const token = JSON.parse(JSON.parse(localStorage.getItem("persist:root")).user).currentUser.accessToken;
-    const res = await userRequest(token).delete(`/orders/${id}`); // Replace with your API endpoint
+    await userRequest(token).delete(`/orders/${id}`); // Replace with your API endpoint
     dispatch(deleteOrderSuccess(id)); // Dispatch success action with order ID to delete
   } catch (err) {
     dispatch(deleteOrderFailure()); // Dispatch failure action on error
